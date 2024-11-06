@@ -102,7 +102,7 @@
         //│ BT_CLR   │ BT_CLR   │          │          │          │   │          │ PG_DN    │ PG_UP    │  .       │  :       │
             &bt BT_CLR  &bt BT_CLR  &none      &none      &none          &none      &kp PG_DN  &kp PG_UP  &kp DOT    &kp COLON
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &mkp LCLK  &kp TAB        &trans     &trans
+                                             &mkp LBUTTON &kp TAB      &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
