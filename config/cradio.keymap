@@ -27,11 +27,6 @@
     /delete-property/ ignore-modifiers;
 };
 
-&num_word {
-    continue-list = <LPAR RPAR LBKT RBKT LBRC RBRC TAB DOT COMMA SEMI COLON SLASH PLUS MINUS ASTRK EQUAL BACKSPACE DEL>;
-    ignore-modifiers;
-};
-
 / {
     combos {
         compatible = "zmk,combos";
