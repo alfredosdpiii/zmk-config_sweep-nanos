@@ -53,7 +53,7 @@
 
         toggle_mouse_layer_combo {
             key-positions = <23 30>;
-            bindings = <&tog 6>;
+            bindings = <&tog 3>;
         };
     };
 
