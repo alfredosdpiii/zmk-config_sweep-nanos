@@ -50,11 +50,6 @@
             key-positions = <4 14>;
             require-prior-idle-ms = <200>;
         };
-
-        toggle_mouse_layer_combo {
-            key-positions = <23 30>;
-            bindings = <&tog 3>;
-        };
     };
 
     keymap {
@@ -84,15 +79,6 @@
 &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none
 &bt BT_CLR_ALL  &none         &none         &none         &none           &none     &kp PG_DN  &kp PG_UP  &kp DOT    &kp COLON
                                             &mkp LCLK     &kp TAB         &trans    &trans
-            >;
-        };
-
-        mouse {
-            bindings = <
-&kp ESC    &kp LC(UP)  &kp LC(TAB)  &kp LC(TAB)  &kp BSPC     &msc SCRL_DN  &msc SCRL_RT    &mmv MOVE_UP    &msc SCRL_LT     &kp BSPC
-&kp LCTRL  &kp LALT    &kp LSHIFT   &kp LGUI     &kp ENTER    &msc SCRL_UP  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp ENTER
-&kp LG(Z)  &kp LG(X)   &kp LG(C)    &kp LG(V)    &kp SPACE    &none         &none           &kp LC(LEFT)    &kp LC(RIGHT)    &mkp RCLK
-                                    &tog 3       &tog 3       &mkp LCLK     &mkp RCLK
             >;
         };
     };
