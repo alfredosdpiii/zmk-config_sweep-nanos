@@ -53,7 +53,7 @@
         };
         toggle_mouse_layer_combo {
             key-positions = <23 30>;
-            bindings = <&tog 6>;  // Using numeric value since MOU isn't recognized in combo
+            bindings = <&tog 6>;
         };
     };
 
@@ -96,8 +96,8 @@
         numpad {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  ESC     │          │          │          │ CAPSWORD │   │          │          │          │          │ BSPC     │
-            &kp ESC    &none      &none      &none      &caps_word     &none      &none      &none      &none      &kp BSPC
+        //│  ESC     │          │          │          │ CAPSLOCK │   │          │          │          │          │ BSPC     │
+            &kp ESC    &none      &none      &none      &kp CAPS       &none      &none      &none      &none      &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ BT_SEL 0 │ BT_SEL 1 │ BT_SEL 2 │ BT_SEL 3 │ BT_SEL 4 │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │          │
             &bt BT_SEL_0 &bt BT_SEL_1 &bt BT_SEL_2 &bt BT_SEL_3 &bt BT_SEL_4    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none
