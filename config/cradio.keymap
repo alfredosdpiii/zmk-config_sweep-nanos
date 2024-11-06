@@ -97,12 +97,12 @@
             &kp ESC    &none      &none      &none      &kp CAPS       &none      &none      &none      &none      &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ BT_SEL 0 │ BT_SEL 1 │ BT_SEL 2 │ BT_SEL 3 │ BT_SEL 4 │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │          │
-            &bt BT_SEL_0 &bt BT_SEL_1 &bt BT_SEL_2 &bt BT_SEL_3 &bt BT_SEL_4    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none
+&bt BT_SEL_0 &bt BT_SEL_1 &bt BT_SEL_2 &bt BT_SEL_3 &bt BT_SEL_4       &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ BT_CLR   │ BT_CLR   │          │          │          │   │          │ PG_DN    │ PG_UP    │  .       │  :       │
             &bt BT_CLR  &bt BT_CLR  &none      &none      &none          &none      &kp PG_DN  &kp PG_UP  &kp DOT    &kp COLON
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &mkp LBUTTON &kp TAB      &trans     &trans
+                                             &mkp LCLK &kp TAB      &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
