@@ -10,6 +10,11 @@
 #define HRML(k1,k2,k3,k4) &mt LGUI k1  &mt LALT k2  &mt LCTRL k3  &mt LSHIFT k4
 #define HRMR(k1,k2,k3,k4) &mt RSHIFT k1  &mt RCTRL k2  &mt RALT k3  &mt RGUI k4
 
+#define DEF 0
+#define HRM 1
+#define NUM 2
+#define MOU 6
+
 / {
     behaviors {
         ht: hold_tap {
@@ -48,7 +53,7 @@
         };
         toggle_mouse_layer_combo {
             key-positions = <23 30>;
-            bindings = <&tog MOU>;
+            bindings = <&tog 6>;  // Using numeric value since MOU isn't recognized in combo
         };
     };
 
@@ -66,7 +71,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ ' "      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &kp SPACE  &mo HRM        &mo NUM    &kp ENTER
+                                            &kp SPACE  &mo 1          &mo 2      &kp ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -108,16 +113,16 @@
         mouse {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  ESC     │ LC(UP)   │ LC(TAB)  │ LC(TAB)  │ BSPC     │   │SCRL_DOWN │SCRL_RIGHT│MOVE_UP   │SCRL_LEFT │ BSPC     │
-            &kp ESC    &kp LC(UP)  &kp LC(TAB) &kp LC(TAB) &kp BSPC   &msc SCROLL_DOWN &msc SCROLL_RIGHT &mmv MOVE_UP &msc SCROLL_LEFT &kp BSPC
+        //│  ESC     │ LC(UP)   │ LC(TAB)  │ LC(TAB)  │ BSPC     │   │SCRL_DN   │SCRL_RT   │MOVE_UP   │SCRL_LT   │ BSPC     │
+            &kp ESC    &kp LC(UP)  &kp LC(TAB) &kp LC(TAB) &kp BSPC   &msc SCRL_DN &msc SCRL_RT &mmv MOVE_UP &msc SCRL_LT &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  LCTRL   │  LALT    │  LSHFT   │  LGUI    │ ENTER    │   │SCRL_UP   │MOVE_LEFT │MOVE_DOWN │MOVE_RIGHT│ ENTER    │
-            &kp LCTRL  &kp LALT    &kp LSHIFT  &kp LGUI   &kp ENTER   &msc SCROLL_UP &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp ENTER
+        //│  LCTRL   │  LALT    │  LSHIFT  │  LGUI    │ ENTER    │   │SCRL_UP   │MOVE_LEFT │MOVE_DOWN │MOVE_RIGHT│ ENTER    │
+            &kp LCTRL  &kp LALT    &kp LSHIFT  &kp LGUI   &kp ENTER   &msc SCRL_UP &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  LG(Z)   │  LG(X)   │  LG(C)   │  LG(V)   │ SPACE    │   │          │          │ LC(LEFT) │ LC(RIGHT)│ RCLICK   │
             &kp LG(Z)  &kp LG(X)   &kp LG(C)   &kp LG(V)  &kp SPACE   &none       &none       &kp LC(LEFT) &kp LC(RIGHT) &mkp RCLK
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &tog MOU   &tog MOU       &mkp LCLK  &mkp RCLK
+                                             &tog 6     &tog 6         &mkp LCLK  &mkp RCLK
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
