@@ -50,6 +50,25 @@
             key-positions = <4 14>;
             require-prior-idle-ms = <200>;
         };
+
+        right_hand_backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <9 8>;
+        };
+
+        invoke_arrow_func {
+            bindings = <&arrow_func>;
+            key-positions = <29 28 27 26>;
+        };
+    };
+
+    macros {
+        arrow_func: arrow_func {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LPAR &kp RPAR &kp SPACE &kp EQUAL &kp GT &kp SPACE &kp RBKT>;
+            label = "ARROW_FUNC";
+        };
     };
 
     keymap {
