@@ -66,7 +66,7 @@
         arrow_func: arrow_func {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LPAR &kp RPAR &kp SPACE &kp EQUAL &kp GT &kp SPACE &kp RBKT>;
+            bindings = <&none &kp LPAR &kp RPAR &kp SPACE &kp EQUAL &kp GT &kp SPACE &kp LEFT_BRACE>;
             label = "ARROW_FUNC";
         };
     };
